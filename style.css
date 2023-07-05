@@ -28,7 +28,7 @@ body{
     flex: 1;
 }
 
-.result{
+.result,.grade{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -38,18 +38,13 @@ body{
     color: white;
     text-align: center;
     border-radius: 5%;
-  
 }
 
 .grade{
-    display: flex;
-    flex-direction: column;
     background-image: linear-gradient(to bottom, hsl(241, 81%, 54%), hsl(252, 100%, 67%));
-    color: white;
     border-radius: 50%;
     height: 150px;
     width: 150px;
-    align-items: center;
     justify-content: center;
 }
 
@@ -63,47 +58,30 @@ body{
     align-items: center;
 }
 
-.reaction{
+.reaction,.memory,.verbal,.visual{
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    background-color: hsl(0, 100%, 89%);
     width: 250px;
     height: 40px;
     border-radius: 6px;
+    background-color: hsl(0, 100%, 89%);
     color: hsl(0, 100%, 67%);
 }
 
 .memory{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     background-color: hsl(59, 100%, 85%);
     color: hsl(39, 100%, 56%);
-    width: 250px;
-    height: 40px;
-    border-radius: 6px;
 }
 
 .verbal{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     background-color: hsl(166, 100%, 84%);
     color: hsl(166, 100%, 37%);
-    width: 250px;
-    height: 40px;
-    border-radius: 6px;
 }
 
 .visual{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     background-color: hsl(287, 100%, 94%);
     color: hsl(234, 85%, 45%);
-    width: 250px;
-    height: 40px;
-    border-radius: 6px;
 }
 
 button{
@@ -114,12 +92,12 @@ button{
     color: white;     
 }
 
-.push{
+.score{
     margin-left: auto;
     color: black;
 }
 
-.hundred{
+.gray{
     color:rgb(150, 162, 173);
 }
 
